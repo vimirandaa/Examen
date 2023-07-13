@@ -1,0 +1,42 @@
+print("Venta de entradas para concierto de Michael Jam")
+
+
+menu = -1
+entrada = 0
+entradas = 0
+
+
+
+while menu <1 or menu >6:
+    print("1. Comprar Entradas")
+    print("2. Mostrar Ubicaciones Disponibles")
+    print("3. Ver Listado de Asistentes")
+    print("4. Mostrar Ganancias Totales")
+    print("5. Salir")
+    menu=int(input("Seleccione una alternativa: "))
+
+if menu == 1:
+    print("Estas son las opciones de entradas disponibles.")
+    print("1. Platinium, $120.000.")
+    print("2. Gold, $80.000.")
+    print("Silver, $50.000.")
+    entrada=int(input("Seleecione la entrada deseada: "))
+    if entrada == 1:    
+        print("Usted selecciono las entradas Platinium, solo puede comprar 3 entradas.")
+        entradas=int(input("Indique cuantas entradas desea."))
+        while entradas <0 or entradas >3:
+            print("Usted ingreso una cantidad no valida, ingrese nuevamente")
+            entradas=int(input("Indique cuantas entradas desea."))
+
+if menu == 2:
+    print("A continuacion se mostraran las ubicaciones disponibles:")
+    
+
+if menu == 3:
+    print("A continuacion se mostrara el lstado de los asistentes")
+
+if menu == 4:
+    print[ganancias]
+
+if menu == 5:
+    print("Muchas gracias por venir.")
